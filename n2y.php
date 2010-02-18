@@ -1,11 +1,10 @@
 <?php
 /*
 
+# Nordea to Yunoo.nl converter tool
 
 
-
-
-How to export from Nordeo Netbank
+## How to export from Nordeo Netbank
 
 - Login 
 - On the next page, select the "Konti" (Account)
@@ -14,9 +13,9 @@ How to export from Nordeo Netbank
 - Scroll down, press "Gem kontobevaegelser", and safe the resulting file
 
 
-How to convert it
+## How to convert it
 
-	echo poster.csv | php n2y.php > rek1.csv
+   php n2y.php < poster.csv > rek1.csv
 
  
 Import this into Yunoo, as if it were an ING account (other banks might work too, but that doens't matter)
@@ -24,7 +23,16 @@ Import this into Yunoo, as if it were an ING account (other banks might work too
 NOTE: It uses a fixed exchange rate as defined by EXCHANGE_RATE!
 
 
+Released under GPL
+
+Author: Jilles Oldenbeuving
+Email: ojilles --* at *-- gmail.com
+
+Origin for the idea: 
+http://getsatisfaction.com/yunoo/topics/nieuwe_formaten_of_standaard_import_formaat
+
 */
+
 define("NOR_DATE", 0);
 define("NOR_DESCRIPTION", 1);
 define("NOR_INTEREST_DATE", 2);
