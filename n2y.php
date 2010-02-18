@@ -4,7 +4,7 @@
 # Nordea to Yunoo.nl converter tool
 
 
-## How to export from Nordeo Netbank
+## How to export from Nordea Netbank
 
 - Login 
 - On the next page, select the "Konti" (Account)
