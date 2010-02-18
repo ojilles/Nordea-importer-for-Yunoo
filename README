@@ -1,0 +1,27 @@
+# Nordea to Yunoo.nl converter tool
+
+
+## How to export from Nordeo Netbank
+
+- Login 
+- On the next page, select the "Konti" (Account)
+- Optionally change the dates near "Periode", click "Hent"
+  (This works for me for more than 200+ transactions in one go)
+- Scroll down, press "Gem kontobevaegelser", and safe the resulting file
+
+
+## How to convert it
+
+   php n2y.php < poster.csv > rek1.csv
+
+ 
+Import this into Yunoo, as if it were an ING account (other banks might work too, but that doens't matter)
+
+NOTE: It uses a fixed exchange rate as defined by EXCHANGE_RATE!
+
+
+Released under GPL
+
+Author: Jilles Oldenbeuving
+Email: ojilles --* at *-- gmail.com
+
